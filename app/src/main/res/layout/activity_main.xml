@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    tools:context="com.example.opilane.bluetooth.MainActivity">
+
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnONOFF"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/onoff"
+        android:background="#090b16"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDiscoverable_on_off"
+        android:text="@string/discover"
+        android:background="#090b16"
+        android:textColor="#ffffff"
+        android:layout_alignBaseline="@+id/btnONOFF"
+        android:layout_alignBottom="@+id/btnONOFF"
+        android:layout_toRightOf="@+id/btnONOFF"
+        android:layout_toEndOf="@+id/btnONOFF"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFindUnpairedDevices"
+        android:text="@string/pair"
+        android:background="#090b16"
+        android:textColor="#ffffff"
+        android:layout_alignBaseline="@+id/btnDiscoverable_on_off"
+        android:layout_alignBottom="@+id/btnDiscoverable_on_off"
+        android:layout_toRightOf="@id/btnDiscoverable_on_off"
+        android:layout_toEndOf="@id/btnDiscoverable_on_off"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/IvNewDevices"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="66dp"/>
+
+
+</RelativeLayout>
